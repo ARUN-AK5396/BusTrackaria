@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginPage">
+
+
+    <ImageView
+        android:foreground="@drawable/forgroud_design"
+        android:layout_width="match_parent"
+        android:src="@drawable/background"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop" />
+    <TextView
+        android:id="@+id/text_loginhead"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:layout_marginTop="60dp"
+        android:text="Login as a Driver"
+        android:textAlignment="center" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_loginEmail"
+        android:layout_below="@+id/text_loginhead"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="40dp"
+        android:text="Email*"
+        android:padding="6dp"
+        android:textColor="@color/white"
+        android:textSize="16sp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edit_loginEmail"
+        android:layout_below="@+id/text_loginEmail"
+        android:hint="Enter your Email"
+        android:padding="8dp"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:drawableLeft="@drawable/ic_baseline_email_24"
+        android:drawablePadding="15dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:inputType="textEmailAddress"
+        android:textSize="16sp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_loginPass"
+        android:layout_below="@+id/edit_loginEmail"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="40dp"
+        android:padding="6dp"
+        android:text="Password*"
+        android:textColor="@color/white"
+        android:textSize="16sp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edit_loginPass"
+        android:layout_below="@+id/text_loginPass"
+        android:textColorHint="@color/white"
+        android:drawableLeft="@drawable/ic_baseline_lock_24"
+        android:drawablePadding="15dp"
+        android:textColor="@color/white"
+        android:hint="Enter your Password"
+        android:layout_marginLeft="40dp"
+        android:padding="8dp"
+        android:layout_marginRight="40dp"
+        android:inputType="textPassword"
+        android:textSize="16sp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textColor="@color/white"
+        android:background="@drawable/button_decoration"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_below="@+id/edit_loginPass"
+        android:layout_marginTop="50dp"
+        android:id="@+id/login_button"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_signUp"
+        android:text="Sign Up"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_marginTop="40dp"
+        android:textColor="#fff"
+        android:textAlignment="center"
+        android:layout_below="@+id/login_button"/>
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="?android:attr/progressBarStyle"
+        android:id="@+id/login_prograss"
+        android:layout_centerVertical="true"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

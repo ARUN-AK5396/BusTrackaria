@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignupPageStudent">
+
+
+    <ImageView
+        android:foreground="@drawable/forgroud_design"
+        android:layout_width="match_parent"
+        android:src="@drawable/background"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView_register_head"
+        android:textColor="@color/white"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:text="Welcome Student "
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView_fullname"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/textView_register_head"
+        android:text="Full Name*"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:padding="6dp"
+        android:layout_marginTop="40dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText_fullanme"
+        android:padding="6dp"
+        android:drawablePadding="15dp"
+        android:textColorHint="@color/white"
+        android:drawableLeft="@drawable/ic_baseline_person_24"
+        android:textColor="@color/white"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:inputType="textPersonName"
+        android:textSize="16sp"
+        android:layout_below="@id/textView_fullname"
+        android:hint="Full name" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView_regNo"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/textView_fullname"
+        android:text="Register Number*"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:padding="6dp"
+        android:layout_marginTop="50dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText_regNo"
+        android:padding="6dp"
+        android:drawablePadding="15dp"
+        android:textColorHint="@color/white"
+        android:drawableLeft="@drawable/ic_baseline_library_books_24"
+        android:textColor="@color/white"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:inputType="textPersonName"
+        android:textSize="16sp"
+        android:layout_below="@id/textView_regNo"
+        android:hint="Register Number" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView_busNo"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/textView_regNo"
+        android:text="Bus Number*"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:padding="6dp"
+        android:layout_marginTop="50dp"/>
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner_busNo"
+        android:padding="5dp"
+        android:textAlignment="center"
+        android:background="@drawable/bus_no"
+        android:entries="@array/bus_no"
+        android:layout_below="@+id/textView_busNo"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView_email"
+        android:layout_below="@+id/textView_busNo"
+        android:text="E-mail*"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:padding="6dp"
+        android:layout_marginTop="50dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText_email"
+        android:padding="6dp"
+        android:textColorHint="@color/white"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/white"
+        android:drawableLeft="@drawable/ic_baseline_email_24"
+        android:drawablePadding="15dp"
+        android:textSize="16sp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@id/textView_email"
+        android:hint="Enter your mail address"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView_pass"
+        android:layout_below="@+id/textView_email"
+        android:text="Password*"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:layout_marginLeft="20dp"
+        android:padding="6dp"
+        android:layout_marginTop="50dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText_pass"
+        android:padding="6dp"
+        android:drawablePadding="15dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/white"
+        android:layout_marginRight="20dp"
+        android:drawableLeft="@drawable/ic_baseline_lock_24"
+        android:inputType="textPassword"
+        android:textSize="16sp"
+        android:textColorHint="@color/white"
+        android:layout_below="@id/textView_pass"
+        android:hint="Enter your Password" />
+
+
+
+
+    <Button
+        android:id="@+id/button_register"
+        android:layout_width="291dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText_pass"
+        android:layout_marginLeft="70dp"
+        android:textColor="@color/white"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="70dp"
+        android:background="@drawable/button_decoration"
+        android:padding="14dp"
+        android:text="Register" />
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/prograss"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:elevation="10dp"
+        android:visibility="gone"/>
+
+
+    <TextView
+        android:id="@+id/textLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_register"
+        android:layout_marginTop="28dp"
+        android:text="Login"
+        android:gravity="center"
+        android:textColor="#fff"
+        android:textSize="16sp" />
+
+
+</RelativeLayout>
+
+
+    <!--    <TextView-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:id="@+id/textView_confirmPass"-->
+    <!--        android:layout_below="@+id/textView_pass"-->
+    <!--        android:text="Confirm Password*"-->
+    <!--        android:layout_marginLeft="20dp"-->
+    <!--        android:textColor="@color/white"-->
+    <!--        android:textSize="16sp"-->
+    <!--        android:padding="6dp"-->
+    <!--        android:layout_marginTop="60dp"/>-->
+    <!--    <EditText-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:id="@+id/editText_confirmPass"-->
+    <!--        android:padding="6dp"-->
+    <!--        android:drawablePadding="15dp"-->
+    <!--        android:drawableLeft="@drawable/ic_baseline_lock_24"-->
+    <!--        android:textColorHint="@color/white"-->
+    <!--        android:layout_marginLeft="20dp"-->
+    <!--        android:textColor="@color/white"-->
+    <!--        android:layout_marginRight="20dp"-->
+    <!--        android:inputType="textPassword"-->
+    <!--        android:textSize="16sp"-->
+    <!--        android:layout_below="@id/textView_confirmPass"-->
+    <!--        android:hint="Enter your Password again" />-->
+    <!--    &lt;!&ndash;        android:drawableLeft="@drawable/ic_baseline_eye"&ndash;&gt;-->

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ProfileFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/profile_fragment">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/profile_profilebackroud"
+                    android:src="@drawable/top_background"
+                    tools:ignore="MissingConstraints" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:id="@+id/profile_profilePic"
+                    android:src="@drawable/userprofile"
+                    app:layout_constraintBottom_toBottomOf="@+id/profile_profilebackroud"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/profile_profilebackroud"/>
+                <TextView
+                    android:id="@+id/profile_textWelcome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Welcome"
+                    android:textSize="26dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_marginTop="20dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/profile_profilePic"/>
+<!--                <TextView-->
+<!--                    android:id="@+id/textView_profile_fullname"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:drawableLeft="@drawable/ic_baseline_person_24"-->
+<!--                    android:hint="Loading"-->
+<!--                    android:layout_marginLeft="30dp"-->
+<!--                    android:layout_marginTop="30dp"-->
+<!--                    android:drawablePadding="15dp"-->
+<!--                    app:layout_constraintStart_toStartOf="parent"-->
+<!--                    app:layout_constraintTop_toBottomOf="@id/profile_textWelcome"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textSize="18sp"/>-->
+
+                <TextView
+                    android:id="@+id/textView_profile_role"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_baseline_person_24"
+                    android:hint="Loading"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="20dp"
+                    android:drawablePadding="15dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/profile_textWelcome"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"/>
+                <TextView
+                    android:id="@+id/textView_profile_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_baseline_email_24"
+                    android:hint="Loading"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="30dp"
+                    android:drawablePadding="15dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/textView_profile_role"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:id="@+id/textView_profile_regNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_baseline_library_books_24"
+                    android:hint="Loading"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="30dp"
+                    android:drawablePadding="15dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/textView_profile_email"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:id="@+id/textView_profile_busNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_baseline_directions_bus_24"
+                    android:hint="Loading"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="30dp"
+                    android:drawablePadding="15dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/textView_profile_regNo"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"/>
+
+
+
+
+
+<!--                <Button-->
+<!--                    android:id="@+id/profile_Edit_button"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Edit Profile"-->
+<!--                    android:layout_marginLeft="30dp"-->
+<!--                    android:layout_marginTop="30dp"-->
+<!--                    android:background="@drawable/button_decoration"-->
+<!--                    android:textAlignment="center"-->
+<!--                    app:layout_constraintStart_toStartOf="parent"-->
+<!--                    android:layout_marginRight="30dp"-->
+<!--                    app:layout_constraintTop_toBottomOf="@id/textView_profile_busNo"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textSize="18sp"/>-->
+
+                <Button
+                    android:id="@+id/profile_logOut_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginTop="68dp"
+                    android:background="@drawable/button_decoration"
+                    android:text="Log Out"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/textView_profile_busNo" />
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:id="@+id/text_refresh"-->
+<!--                    android:text="Refresh"-->
+<!--                    android:textSize="18sp"-->
+<!--                    app:layout_constraintStart_toStartOf="parent"-->
+<!--                    app:layout_constraintEnd_toEndOf="parent"-->
+<!--                    app:layout_constraintTop_toBottomOf="@id/profile_logOut_button"-->
+<!--                    android:textColor="#ff5353"-->
+<!--                    android:textAlignment="center"-->
+<!--                    android:gravity="center"-->
+<!--                    android:layout_marginTop="15dp"/>-->
+
+                <ProgressBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/prograss"
+                    android:visibility="gone"
+                    tools:ignore="MissingConstraints" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</FrameLayout>

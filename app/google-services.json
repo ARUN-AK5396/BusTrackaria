@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1074107435148",
+    "project_id": "bustrackeria",
+    "storage_bucket": "bustrackeria.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1074107435148:android:51b63f351b565bd4a9d3a9",
+        "android_client_info": {
+          "package_name": "com.project.bustrackeria"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1074107435148-qcd6givss07ohcv9qfckat8nk83m5r4a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAgpcWP4kzOH3QVFVAZE9RT0ZNOffACVfA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1074107435148-qcd6givss07ohcv9qfckat8nk83m5r4a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

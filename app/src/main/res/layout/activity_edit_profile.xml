@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditProfile">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/profile_change_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/pizza2"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/profile_change_text"
+        android:text="Change User Profile"
+        android:layout_below="@+id/profile_change_image"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:textAlignment="center"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        android:layout_marginTop="40dp"
+        android:layout_below="@id/profile_change_text">
+
+        <Button
+            android:layout_width="20dp"
+            android:layout_weight="1"
+            android:id="@+id/profile_cancel_btn"
+            android:background="@drawable/button_decoration"
+            android:text="Close"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="40dp"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:layout_width="20dp"
+            android:layout_weight="1"
+            android:id="@+id/profile_save_btn"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/button_decoration"
+            android:text="Save"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
